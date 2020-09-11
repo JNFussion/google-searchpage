@@ -1,10 +1,13 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 
 #page{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-rows: 10% auto 10%;
-    background-color: gray;
+
 }
 a{
     text-decoration: none;
@@ -15,14 +18,14 @@ a{
     position:fixed;
     width: 100%;
     height: 12%;
-    background-color: greenyellow;
+    background-color:white;
     display: grid;
     grid-template-rows: 60% 40%;
     grid-template-columns: 10% 35% auto 20%;
     border-bottom: thin solid hsl(0, 0%, 70%);
 }
 #logo-google{
-    background-color: lightblue;
+
     grid-row: 1/3;
     grid-column: 1/2;
     display: grid;
@@ -34,18 +37,20 @@ img{
     max-height: 80%;
 }
 #search{
-    background-color: lightcoral;
+
     grid-row: 1/2;
     grid-column: 2/3;
     justify-items: center;
     align-content: center;
+    margin-top: 1rem;
     padding: 0.5rem;
     display: grid;
     border-radius: 25px;
     border: thin solid hsl(0, 0%, 80%);
+
 }
 #searchbar{
-    background-color: lightslategray;
+
     display: grid;
     width: 100%;
     grid-template-columns: 90% 5%;
@@ -60,7 +65,7 @@ input{
 }
 
 #user-div{
-    background-color: lightcyan;
+
     grid-row: 1/2;
     grid-column: 4/5;
     display: flex;
@@ -73,7 +78,7 @@ input{
 }
 #options-google{
     width: 100%;
-    background-color: lightsalmon;
+
     grid-row: 2/3;
     grid-column: 2/3;
     display: flex;
@@ -93,15 +98,13 @@ input{
 }
 #config-options{
     height: 100%;
-    background-color: lavender;
+
     justify-self: flex-end;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 #main-content{
-    background-color: indianred;
     display: grid;
     grid-template-columns: 40%;
     padding-left: 10%;
@@ -128,8 +131,9 @@ input{
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
     font-size: 0.85rem;
+    line-height: 1.2rem;
     text-align: left;
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 20%);
 }
 #related-result-div{
     display:grid;
@@ -139,14 +143,10 @@ input{
 #related-result-tittle{
     grid-row: 1/2;
     grid-column: 1/3;
-    background-color: khaki;
+
     font-size: 1.2rem;
     color: hsl(0, 0%, 25%);
 }
-.related-result-column{
-    background-color: lime;
-}
-
 .related-result-link{
     display: block;
     padding: 0.8rem;
@@ -155,7 +155,7 @@ input{
     color: blue;
 }
 #page-numbers-div{
-    background-color: lavender;
+    
     display: flex;
     flex-direction: row;
     font-size: 1.3rem;
@@ -175,18 +175,68 @@ input{
     grid-row: 1/2;
     display: flex;
     flex-direction: row;
-    background-color: cornsilk;
 }
 .google-logo-part-number{
-    color: blue;
+    color: #4285F4;
     font-size: 0.9rem;
     padding-top: 0.6rem;
+}
+.google-logo-part-letter{
+    color:#F4B400;
+}
+.red-letters{
+    color:#DB4437;
+}
+.blue-letters{
+    color: #4285F4;
+}
+.green-letters{
+    color:#0F9D58;
+}
+#google-logo-part-simbol{
+    padding-left: 1.8rem;
+}
+#google-logo-part-next{
+    padding-left: 3rem;
 }
 
 
 
 footer{
-    background-color: khaki;
+    background-color:#f2f2f2;
     display: grid;
     grid-template-rows: 50% 50%;
+    border: thin solid #e4e4e4;
+    padding-left: 10%;
+}
+#footer-top{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 0.5rem 0;
+}
+#footer-bottom{
+    padding: 1rem 1rem 0.5rem 0;
+    display: flex;
+    gap: 2rem;
+}
+#country{
+    padding-right: 2rem;
+    border-right: thin solid #999999;
+    
+}
+
+#location-info{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-left: 2rem;
+}
+.footer-text{
+    display: block;
+    color: #797979;
+}
+
+#city{
+    font-weight: 600;
+    color: black;
 }
